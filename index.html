@@ -18,12 +18,12 @@
     <!-- 3. Add a babel script within the body of the HTML file -->
     <script type="text/babel">
         function HelloWorld(props){
-            return <h1>Message: {props.message}</h1>
+            return <h1>Message: {props.message[props.index]}</h1>
         }
     
     
     ReactDOM.render(
-            <HelloWorld message="Props Funcional Component Hello World!!!"/>,
+            <HelloWorld message="Props Funcional Component Hello World!!!" index="3"/>,
             document.getElementById("root")
         )
     
