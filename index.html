@@ -21,10 +21,18 @@
             return <li>Test String</li>
           }
           
-          
+          function ShoppingTitle(props){
+            return (
+                <div>
+                    <h1>Test Title</h1>
+                    <h2>Test Description</h2>
+                </div>
+    
+            ) 
+        }
               
           ReactDOM.render(
-            <ListItem/>,
+            <ShoppingTitle/>,
             document.getElementById("root")
           )    
     </script>
