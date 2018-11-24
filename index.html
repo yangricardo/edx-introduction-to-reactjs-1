@@ -17,16 +17,49 @@
 
     <!-- 3. Add a babel script within the body of the HTML file -->
     <script type="text/babel">
-        function HelloWorld(props){
-            return <h1>Message: {props.message[props.index]}</h1>
+        function ShoppingApp(props){
+            return (
+                <div>
+                    <div>
+                        <h1>My Shopping List</h1>
+                        <h2>Total Number of Items: 9</h2>
+                    </div>
+                    <div>
+                        <h3>Food</h3>
+                        <ol>
+                            <li>Apple</li>
+                            <li>Bread</li>
+                            <li>Cheese</li>
+                        </ol>
+                    </div>
+    
+                    <div>
+                        <h3>Clothes</h3>
+                        <ol>
+                            <li>Shirt</li>
+                            <li>Pants</li>
+                            <li>Hat</li>
+                        </ol>
+                    </div>
+    
+                    <div>
+                        <h3>Supplies</h3>
+                        <ol>
+                            <li>Pen</li>
+                            <li>Paper</li>
+                            <li>Glue</li>
+                        </ol>
+                    </div>
+    
+    
+                </div>
+            )
         }
     
-    
-    ReactDOM.render(
-            <HelloWorld message="Props Funcional Component Hello World!!!" index="3"/>,
+        ReactDOM.render(
+            <ShoppingApp/>,
             document.getElementById("root")
         )
-    
     
     </script>
 
