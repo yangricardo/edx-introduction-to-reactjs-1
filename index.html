@@ -17,15 +17,16 @@
 
     <!-- 3. Add a babel script within the body of the HTML file -->
     <script type="text/babel">
-        function HelloWorld(){
-            return <h1>Functional Component Hello World!</h1>
+        function HelloWorld(props){
+            return <h1>Message: {props.message}</h1>
         }
     
     
     ReactDOM.render(
-            <HelloWorld/>,
+            <HelloWorld message="Props Funcional Component Hello World!!!"/>,
             document.getElementById("root")
         )
+    
     
     </script>
 
