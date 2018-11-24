@@ -34,11 +34,11 @@
         function ShoppingList(props){
             return (
                 <div>
-                    <h3>Test Header</h3>
+                    <h3>{props.header}</h3>
                     <ol>
-                        <ListItem/>
-                        <ListItem/>
-                        <ListItem/>
+                        <ListItem item = {props.items[0]}/>
+                        <ListItem item = {props.items[1]}/>
+                        <ListItem item = {props.items[2]}/>
                     </ol>
                 </div>
             )
