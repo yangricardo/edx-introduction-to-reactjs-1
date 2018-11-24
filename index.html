@@ -17,16 +17,16 @@
 
     <!-- 3. Add a babel script within the body of the HTML file -->
     <script type="text/babel">
-        var num = 0;
-
-        function updateNum(){
-
-            ReactDOM.render(
-                <div>{num++}</div>,
-            document.getElementById("root")
-            )
+        function HelloWorld(){
+            return <h1>Functional Component Hello World!</h1>
         }
-        setInterval(updateNum,100)
+    
+    
+    ReactDOM.render(
+            <HelloWorld/>,
+            document.getElementById("root")
+        )
+    
     </script>
 
 </body>
