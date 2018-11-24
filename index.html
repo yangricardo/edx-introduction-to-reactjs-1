@@ -17,18 +17,16 @@
 
     <!-- 3. Add a babel script within the body of the HTML file -->
     <script type="text/babel">
-        function Feature(props){
-            return (
-                props.active && <h1>{props.message}</h1>
-            )
-        }
-    
-    
-        
-            ReactDOM.render(
-                <Feature active={true} message="HI"/>,
-                document.getElementById("root")
-            )    
+        function ListItem(props){
+            return <li>Test String</li>
+          }
+          
+          
+              
+          ReactDOM.render(
+            <ListItem/>,
+            document.getElementById("root")
+          )    
     </script>
 
 </body>
