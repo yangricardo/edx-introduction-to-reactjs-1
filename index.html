@@ -30,9 +30,22 @@
     
             ) 
         }
+
+        function ShoppingList(props){
+            return (
+                <div>
+                    <h3>Test Header</h3>
+                    <ol>
+                        <ListItem/>
+                        <ListItem/>
+                        <ListItem/>
+                    </ol>
+                </div>
+            )
+        }
               
           ReactDOM.render(
-            <ShoppingTitle/>,
+            <ShoppingList/>,
             document.getElementById("root")
           )    
     </script>
