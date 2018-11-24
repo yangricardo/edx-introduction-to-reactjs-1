@@ -12,10 +12,16 @@
 </head>
 
 <body>
+    <!-- 4. Add <div id="root></div> to the body of the HTML file -->
+    <div id="root"></div>
 
     <!-- 3. Add a babel script within the body of the HTML file -->
     <script type="text/babel">
-
+        <!-- 5. Start rendering elements using ReactJS -->
+        ReactDOM.render(
+            <div>Hello World</div>,
+            document.getElementById("root")
+        )
     </script>
 
 </body>
